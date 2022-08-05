@@ -2,7 +2,7 @@
 
 ## Introduction
 
-> *App introduction goes here ...*
+Just an application to test the code review workflow with Danger
 
 ## Documentation
 
