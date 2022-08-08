@@ -10,7 +10,10 @@ formatters = [
   SimpleCov::Formatter::LcovFormatter
 ]
 
-SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
+SimpleCov::Formatter::LcovFormatter.config do |c|
+  c.report_with_single_file = true
+  c.lcov_file_name = 'test-danger.lcov'
+end
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(formatters)
 
 if ENV['CIRCLE_ARTIFACTS']
