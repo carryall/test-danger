@@ -12,7 +12,7 @@ describe 'Codebase', codebase: true do
   end
 
   it 'does NOT break zeitwerk loading' do
-    expect(`bundle exec rake zeitwerk:check`).to include 'Not good!'
+    expect(`bundle exec rake zeitwerk:check`).to include 'All is good!'
   end
 
   it 'does not offend engine prefix name' do
