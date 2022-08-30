@@ -49,3 +49,5 @@
 
 # Ignore Node dependencies
 /node_modules
+
+.vscode/
